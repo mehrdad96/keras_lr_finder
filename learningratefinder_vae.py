@@ -161,6 +161,7 @@ class LearningRateFinder:
 		losses = self.losses[skipBegin:-skipEnd]
 
 		# plot the learning rate vs. loss
+		plt.figure(figsize=(16,10))
 		plt.plot(lrs, losses)
 		plt.xscale("log")
 		plt.xlabel("Learning Rate (Log Scale)")
